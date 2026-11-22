@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Nailhouse by ILA · Nails, lashes &amp; café in Bacoor (concept)</title>
+<meta name="description" content="Concept redesign: Nailhouse by ILA, a nail and lash studio with a small café in Molino III, Bacoor, Cavite.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23a3122a'/%3E%3Cpath d='M32 30c-6-8-16-10-18-4s6 10 18 4zm0 0c6-8 16-10 18-4s-6 10-18 4zm-3 2-6 16 5-3 3 5 1-18zm6 0 6 16-5-3-3 5-1-18z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+html,body{background:#fbf6f2;color:#2b1622}
+:root{
+  --milk:#fbf6f2;
+  --cream:#f4ece4;
+  --lilac:#ebe2f8;
+  --lilac-2:#d8c7f1;
+  --baby:#d3e5f8;
+  --cherry:#a3122a;
+  --cherry-dk:#7f0d20;
+  --cherry-70:rgba(163,18,42,.8);
+  --ink:#2b1622;
+  --ink-70:rgba(43,22,34,.74);
+  --line:rgba(163,18,42,.18);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;-webkit-font-smoothing:antialiased;scroll-behavior:smooth}
+body{font:400 17px/1.6 Outfit,"Helvetica Neue",Arial,sans-serif}
+img,svg{display:block;max-width:100%}
+img{height:auto}
+a{color:inherit}
+::selection{background:var(--lilac-2)}
+:focus-visible{outline:3px solid var(--cherry);outline-offset:3px}
+.disp{font-family:Gloock,Georgia,serif;font-weight:400;letter-spacing:-.015em;line-height:1}
+.wrap{max-width:1220px;margin:0 auto;padding:0 clamp(20px,4vw,56px)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:700 12px/1.2 Outfit,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--cherry-70)}
+.eyebrow svg{width:16px;height:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 28px;font:700 14px/1 Outfit,sans-serif;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background-color .2s,transform .2s,box-shadow .2s;white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none}
+.btn--cherry{background:var(--cherry);color:#fff}
+.btn--cherry:hover{background:var(--cherry-dk);transform:translateY(-2px);box-shadow:0 14px 24px -14px rgba(127,13,32,.7)}
+.btn--line{color:var(--cherry);box-shadow:inset 0 0 0 2px var(--cherry)}
+.btn--line:hover{background:rgba(163,18,42,.06)}
+.btn--milk{background:var(--milk);color:var(--cherry)}
+.btn--milk:hover{background:#fff}
+.btn--ghost{color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.75)}
+.btn--ghost:hover{background:rgba(255,255,255,.1)}
+.btn:active{transform:scale(.98)}
+.cap{font-size:12px;color:var(--ink-70);margin-top:10px}
+
+/* ribbon + header */
+.ribbon{background:var(--cherry);color:rgba(255,255,255,.94);font:500 13px/1.35 Outfit,sans-serif;text-align:center;padding:8px 16px;letter-spacing:.02em}
+header{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:84px;padding:0 clamp(20px,4vw,56px);border-bottom:1px solid var(--line);background:var(--milk)}
+nav ul{display:flex;gap:28px;list-style:none}
+nav a{font:500 15px/1 Outfit,sans-serif;text-decoration:none;color:var(--ink);padding:10px 0}
+nav a:hover{color:var(--cherry)}
+.wordmark{text-align:center;text-decoration:none;color:var(--cherry);display:block}
+.wordmark b{display:block;font:400 34px/1 Gloock,Georgia,serif;letter-spacing:.06em}
+.wordmark span{display:block;margin-top:5px;font:700 10px/1 Outfit,sans-serif;letter-spacing:.42em;color:var(--ink-70)}
+.pill{justify-self:end;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 22px;border-radius:999px;background:var(--lilac);color:var(--cherry);font:700 13px/1 Outfit,sans-serif;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:background-color .2s}
+.pill:hover{background:var(--lilac-2)}
+.pill svg{width:16px;height:16px}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:calc(100vh - 118px);min-height:calc(100dvh - 118px)}
+.hero-l{display:flex;flex-direction:column;justify-content:center;padding:clamp(40px,6vw,96px) clamp(20px,5vw,84px)}
+.hero h1{margin:22px 0 0;font-size:clamp(54px,6.4vw,104px);line-height:.98;color:var(--ink)}
+.hero h1 .c{color:var(--cherry);display:block}
+.hero .sub{margin-top:26px;max-width:31rem;font-size:clamp(17px,1.3vw,19px)}
+.hero-btns{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:30px}
+.chips span{font:500 13px/1 Outfit,sans-serif;padding:9px 14px;border-radius:999px;background:var(--baby);color:#1d3a5c;letter-spacing:.02em}
+.hero-r{position:relative;background:var(--lilac);display:grid;place-items:center;padding:clamp(56px,6vw,90px) clamp(24px,4vw,64px) clamp(40px,4vw,60px);overflow:hidden}
+.hero-r::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 50% at 50% 45%,rgba(255,255,255,.65),rgba(255,255,255,0));pointer-events:none}
+.frame{position:relative;width:min(440px,78%);}
+.arch{position:relative;border-radius:999px 999px 26px 26px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 0 0 10px var(--milk),0 0 0 12px var(--cherry),0 40px 60px -30px rgba(80,20,60,.55)}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:50% 60%;transform:scale(1.04);transition:transform 1.2s cubic-bezier(.22,1,.36,1)}
+.frame:hover .arch img{transform:scale(1.09)}
+.bow{position:absolute;left:50%;top:-74px;width:min(270px,62%);transform:translateX(-50%);z-index:3;filter:drop-shadow(0 10px 10px rgba(127,13,32,.3))}
+.bow .loop{transform-box:fill-box;transform-origin:100% 50%;animation:tieL 1s cubic-bezier(.34,1.56,.64,1) .5s both}
+.bow .loop.r{transform-origin:0 50%;animation-name:tieR}
+.bow .tail{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1s cubic-bezier(.65,0,.35,1) 1s forwards}
+.bow .knot{animation:pop .5s cubic-bezier(.34,1.56,.64,1) .9s both;transform-box:fill-box;transform-origin:center}
+@keyframes tieL{from{transform:scale(.2) rotate(30deg);opacity:0}to{transform:none;opacity:1}}
+@keyframes tieR{from{transform:scale(.2) rotate(-30deg);opacity:0}to{transform:none;opacity:1}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes pop{from{transform:scale(0)}to{transform:none}}
+.sticker{position:absolute;left:-58px;bottom:34px;width:152px;height:152px;z-index:4}
+.sticker .spin{animation:spin 18s linear infinite;transform-origin:50% 50%}
+@keyframes spin{to{transform:rotate(360deg)}}
+.star{position:absolute;z-index:4;width:34px;animation:twinkle 3.2s ease-in-out infinite}
+.star.s1{right:-30px;top:18%}
+.star.s2{right:6%;bottom:-26px;width:22px;animation-delay:1.1s}
+.star.s3{left:-6px;top:22%;width:20px;animation-delay:2s}
+@keyframes twinkle{50%{transform:scale(.6) rotate(25deg);opacity:.55}}
+.hero-r .cap{position:absolute;right:clamp(16px,2vw,28px);bottom:14px;margin:0}
+.in-l{animation:rise .9s cubic-bezier(.22,1,.36,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+
+/* sections */
+section{position:relative}
+.pad{padding:clamp(88px,10vw,140px) 0}
+h2.disp{font-size:clamp(40px,5vw,74px);color:var(--ink)}
+h2.disp em{font-style:normal;color:var(--cherry)}
+
+/* menu */
+.menu-grid{display:grid;grid-template-columns:1.45fr .55fr;gap:clamp(28px,4vw,56px);align-items:stretch}
+.board{background:#fff;border-radius:6px;padding:clamp(28px,4vw,56px);box-shadow:0 0 0 1px var(--line),0 0 0 8px var(--milk),0 0 0 9px var(--line),0 30px 60px -40px rgba(80,20,40,.4)}
+.board-head{text-align:center;border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:30px}
+.board-head h2{margin-top:14px}
+.board-head p{margin-top:10px;color:var(--ink-70)}
+.groups{display:grid;grid-template-columns:1fr 1fr 1fr;gap:clamp(20px,3vw,40px)}
+.group h3{font:400 28px/1 Gloock,Georgia,serif;color:var(--cherry);margin-bottom:6px}
+.group .kick{font:700 11px/1.2 Outfit,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-70);margin-bottom:18px;display:block}
+.item{display:flex;align-items:baseline;gap:8px;padding:10px 0;border-bottom:1px dashed var(--line);font-size:16px}
+.item b{font-weight:500;line-height:1.3}
+.item i{flex:1;border-bottom:2px dotted rgba(43,22,34,.25);transform:translateY(-4px)}
+.item small{white-space:nowrap;font:700 11px/1 Outfit,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--cherry)}
+.group p{font-size:15px;color:var(--ink-70);margin-top:14px;line-height:1.5}
+.board-foot{margin-top:34px;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.board-foot p{color:var(--ink-70);font-size:15px}
+.board-foot p a{color:var(--cherry);font-weight:700}
+.side-photo{display:flex;flex-direction:column}
+.side-photo img{width:100%;flex:1;min-height:0;height:100%;max-height:640px;object-fit:cover;object-position:50% 50%;border-radius:200px 200px 6px 6px}
+
+/* sets */
+.sets{background:var(--lilac)}
+.sets-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:56px}
+.sets-head p{font-size:18px;max-width:30rem}
+.sets-head .btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.tile{background:var(--milk);border-radius:26px;padding:28px 24px 24px;display:flex;flex-direction:column;align-items:flex-start;gap:20px;transition:transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .3s}
+.tile:hover{transform:translateY(-6px) rotate(-1deg);box-shadow:0 24px 36px -24px rgba(80,20,60,.5)}
+.tile .art{width:100%;aspect-ratio:1.25;border-radius:18px;display:grid;place-items:center}
+.tile .art svg{width:58%;height:auto}
+.tile h3{font:400 26px/1 Gloock,Georgia,serif}
+.tile p{font-size:15px;color:var(--ink-70);line-height:1.5;margin-top:-8px}
+
+/* cafe */
+.cafe-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(36px,5vw,80px);align-items:center}
+.cafe-photo{position:relative}
+.cafe-photo img{width:100%;aspect-ratio:5/4;object-fit:cover;border-radius:6px;box-shadow:0 0 0 10px #fff,0 0 0 11px var(--line)}
+.cafe-photo .tag{position:absolute;right:-18px;top:-22px;background:var(--cherry);color:#fff;font:400 22px/1 Gloock,serif;padding:16px 20px;border-radius:999px;transform:rotate(6deg)}
+.trio{font:400 clamp(26px,2.6vw,36px)/1.15 Gloock,Georgia,serif;color:var(--cherry);margin:18px 0 6px}
+.cafe-grid h2{margin:6px 0 22px}
+.cafe-grid p.lead{font-size:18px;max-width:28rem}
+
+/* visit */
+.visit{background:var(--cherry);color:#fff}
+.visit .eyebrow{color:rgba(255,255,255,.8)}
+.visit h2.disp{color:#fff}
+.visit-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(36px,5vw,80px);align-items:center}
+.visit-grid h2{margin:18px 0 24px}
+.visit .addr{font-size:19px;color:rgba(255,255,255,.9);max-width:30rem}
+.visit .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.ticket{position:relative;background:var(--milk);color:var(--ink);border-radius:18px;padding:34px;
+  -webkit-mask:radial-gradient(circle 16px at 0 62%,#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 16px at 100% 62%,#0000 98%,#000) right/51% 100% no-repeat;
+          mask:radial-gradient(circle 16px at 0 62%,#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 16px at 100% 62%,#0000 98%,#000) right/51% 100% no-repeat}
+.ticket h3{font:400 30px/1.05 Gloock,serif;color:var(--cherry)}
+.ticket .k{display:block;font:700 11px/1.2 Outfit,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-70);margin-bottom:12px}
+.ticket .rule{border-top:2px dashed var(--line);margin:26px 0 22px}
+.ticket dl{display:grid;grid-template-columns:auto 1fr;gap:10px 18px;font-size:16px}
+.ticket dt{font:700 11px/2 Outfit,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--cherry)}
+.ticket dd a{color:var(--ink);font-weight:500}
+
+/* contact */
+.contact{background:var(--lilac);text-align:center}
+.contact h2.disp{font-size:clamp(50px,7.4vw,118px)}
+.rows{display:grid;grid-template-columns:1fr 1.5fr 1fr 1fr 1fr;gap:12px;margin-top:56px;text-align:left}
+.rows a{display:flex;flex-direction:column;gap:16px;padding:24px;border-radius:22px;background:var(--milk);text-decoration:none;transition:transform .25s,box-shadow .25s}
+.rows a:hover{transform:translateY(-4px);box-shadow:0 20px 34px -22px rgba(80,20,60,.5)}
+.rows i{width:44px;height:44px;border-radius:50%;background:var(--cherry);display:grid;place-items:center}
+.rows i svg{width:19px;height:19px}
+.rows small{display:block;font:700 11px/1.2 Outfit,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-70);margin-bottom:6px}
+.rows strong{font:500 16px/1.35 Outfit,sans-serif;color:var(--ink);word-break:break-word}
+
+footer{background:var(--milk);color:var(--ink-70);padding:56px 0 48px;font-size:14px;border-top:1px solid var(--line)}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
+.foot ul{display:flex;gap:22px;list-style:none;flex-wrap:wrap}
+.foot a{text-decoration:none}.foot a:hover{color:var(--cherry);text-decoration:underline}
+.foot .wordmark{text-align:left}
+.foot-note{margin-top:28px;padding-top:22px;border-top:1px solid var(--line);display:grid;gap:6px}
+
+.callbar{display:none}
+
+.js [data-reveal]{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
+.js [data-reveal].is-in{opacity:1;transform:none}
+
+@media (max-width:1060px){
+  .groups{grid-template-columns:1fr 1fr}
+  .tiles{grid-template-columns:1fr 1fr}
+  .rows{grid-template-columns:1fr 1fr}
+}
+@media (max-width:960px){
+  nav{display:none}
+  .hero{grid-template-columns:1fr;min-height:0}
+  .menu-grid,.sets-head,.cafe-grid,.visit-grid{grid-template-columns:1fr}
+  .side-photo img{max-height:420px;border-radius:6px}
+}
+@media (max-width:760px){
+  body{padding-bottom:84px}
+  header{grid-template-columns:auto 1fr;height:72px}
+  .wordmark{text-align:left}
+  .wordmark b{font-size:28px}
+  .pill span{display:none}
+  .pill{padding:0 14px}
+  .hero-l{padding:40px 20px 44px}
+  .hero-btns .btn{flex:1 1 100%}
+  .hero-r{order:-1;padding:70px 20px 40px}
+  .frame{width:min(220px,58%)}
+  .hero-r .cap{right:auto;left:20px}
+  .bow{top:-52px}
+  .hero-l{padding:34px 20px 40px}
+  .sticker{width:112px;height:112px;left:-34px;bottom:20px}
+  .groups{grid-template-columns:1fr}
+  .side-photo img{max-height:300px;object-position:50% 40%}
+  .tiles{grid-template-columns:1fr 1fr;gap:12px}
+  .tile{padding:16px;border-radius:20px;gap:14px}
+  .tile h3{font-size:21px}
+  .tile p{font-size:14px}
+  .cafe-photo .tag{right:8px;top:-18px;font-size:18px}
+  .visit .btns .btn,.sets-head .btns .btn{flex:1 1 100%}
+  .ticket{padding:26px}
+  .rows{grid-template-columns:1fr}
+  .rows a{flex-direction:row;align-items:center}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));z-index:40;height:58px;border-radius:4px;overflow:hidden;background:var(--cherry);box-shadow:0 0 0 2px var(--milk),0 16px 30px -12px rgba(0,0,0,.45)}
+  .callbar a{display:flex;align-items:center;justify-content:center;gap:8px;color:#fff;font:700 14px/1 Outfit,sans-serif;letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
+  .callbar a+a{border-left:1px solid rgba(255,255,255,.25)}
+  .callbar svg{width:18px;height:18px}
+}
+@media (max-width:340px){.tiles{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .bow .tail{stroke-dashoffset:0}
+  .js [data-reveal]{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="ribbon">Concept redesign by Jeig Torio · not the business's official website</div>
+<header>
+  <nav aria-label="Main"><ul><li><a href="#menu">Menu</a></li><li><a href="#sets">Sets</a></li><li><a href="#cafe">Café</a></li><li><a href="#visit">Visit</a></li></ul></nav>
+  <a class="wordmark" href="#top" aria-label="Nailhouse by ILA, back to top"><b>nailhouse</b><span>BY ILA</span></a>
+  <a class="pill" href="tel:+639171044832"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span>Book a set</span></a>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+  <div class="hero-l">
+    <span class="eyebrow in-l" style="animation-delay:.1s"><svg viewBox="0 0 24 24" fill="#a3122a" aria-hidden="true"><path d="M12 2l2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2z"/></svg>Molino III, Bacoor, Cavite</span>
+    <h1 id="h1" class="disp in-l" style="animation-delay:.2s">Nails, lashes <span class="c">&amp; a little café.</span></h1>
+    <p class="sub in-l" style="animation-delay:.4s">Nailhouse by ILA is a nail and lash studio with a small café inside. Come in for nail extensions, a pedicure or a fresh set of lashes, and stay for a cup.</p>
+    <div class="hero-btns in-l" style="animation-delay:.55s">
+      <a class="btn btn--cherry" href="tel:+639171044832"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Call to book</a>
+      <a class="btn btn--line" href="https://www.facebook.com/thenailhousebacoor" target="_blank" rel="noopener">Our Facebook page</a>
+    </div>
+    <div class="chips in-l" style="animation-delay:.7s" aria-label="Services"><span>Nail extensions</span><span>Pedicures</span><span>Eyelash extensions</span><span>Café</span></div>
+  </div>
+  <div class="hero-r">
+    <div class="frame">
+      <svg class="bow" viewBox="0 0 240 190" aria-hidden="true">
+        <defs><linearGradient id="rib" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c8203b"/><stop offset="1" stop-color="#8f0f24"/></linearGradient></defs>
+        <path class="tail" pathLength="1" d="M112 68 C90 84 64 104 30 150" fill="none" stroke="url(#rib)" stroke-width="18" stroke-linecap="butt"/>
+        <path class="tail" pathLength="1" d="M128 68 C150 84 176 104 210 150" fill="none" stroke="url(#rib)" stroke-width="18" stroke-linecap="butt"/>
+        <path class="loop" d="M120 62 C92 20 30 8 22 40 C14 74 70 88 120 62 Z" fill="url(#rib)"/>
+        <path class="loop r" d="M120 62 C148 20 210 8 218 40 C226 74 170 88 120 62 Z" fill="url(#rib)"/>
+        <path d="M44 38 C56 28 84 32 104 52" fill="none" stroke="#ffd2da" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+        <path d="M196 38 C184 28 156 32 136 52" fill="none" stroke="#ffd2da" stroke-width="4" stroke-linecap="round" opacity=".5"/>
+        <rect class="knot" x="106" y="48" width="28" height="30" rx="11" fill="#b5162f"/>
+        <path d="M112 56 Q120 52 128 56" stroke="#ffd2da" stroke-width="3" fill="none" stroke-linecap="round" opacity=".7"/>
+      </svg>
+      <div class="arch"><img src="assets/polish-caps.webp" width="1100" height="711" alt="Rows of nail polish bottles seen from above, their caps in pink, cherry, gold, sky blue and lilac"></div>
+      <svg class="sticker" viewBox="0 0 160 160" aria-hidden="true">
+        <defs><path id="circ" d="M80 80 m-56 0 a56 56 0 1 1 112 0 a56 56 0 1 1 -112 0"/></defs>
+        <circle cx="80" cy="80" r="78" fill="#d3e5f8"/>
+        <circle cx="80" cy="80" r="72" fill="none" stroke="#a3122a" stroke-width="1.5" stroke-dasharray="3 5"/>
+        <g class="spin"><text font-family="Outfit, sans-serif" font-weight="700" font-size="14.5" letter-spacing="3.2" fill="#a3122a"><textPath href="#circ">NAILS · LASHES · CAFE · NAILS · LASHES · CAFE ·</textPath></text></g>
+        <g transform="translate(80 82)" fill="none" stroke="#a3122a" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M-17 -6 h28 v10 a14 14 0 0 1 -28 0 z" fill="#fff"/><path d="M11 -2 h4 a6 6 0 0 1 0 12 h-5"/><path d="M-8 -18 q4 -5 0 -10 M2 -18 q4 -5 0 -10"/></g>
+      </svg>
+      <svg class="star s1" viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="chr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".45" stop-color="#b8c4d6"/><stop offset=".55" stop-color="#eef3fa"/><stop offset="1" stop-color="#8e9bb0"/></linearGradient></defs><path d="M20 0 C22 13 27 18 40 20 C27 22 22 27 20 40 C18 27 13 22 0 20 C13 18 18 13 20 0Z" fill="url(#chr)" stroke="#7d8aa1" stroke-width=".8"/></svg>
+      <svg class="star s2" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0 C22 13 27 18 40 20 C27 22 22 27 20 40 C18 27 13 22 0 20 C13 18 18 13 20 0Z" fill="#a3122a"/></svg>
+      <svg class="star s3" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0 C22 13 27 18 40 20 C27 22 22 27 20 40 C18 27 13 22 0 20 C13 18 18 13 20 0Z" fill="url(#chr)" stroke="#7d8aa1" stroke-width=".8"/></svg>
+    </div>
+    <p class="cap">Concept photo.</p>
+  </div>
+</section>
+
+<section id="menu" class="pad">
+  <div class="wrap menu-grid">
+    <div class="board" data-reveal>
+      <div class="board-head">
+        <span class="eyebrow">The house menu</span>
+        <h2 class="disp">What's on <em>today</em>.</h2>
+        <p>Nails. Lashes. Cafe. Ask us for prices and the full list.</p>
+      </div>
+      <div class="groups">
+        <div class="group">
+          <h3>Nails</h3><span class="kick">Hands &amp; feet</span>
+          <div class="item"><b>Nail extensions</b><i></i><small>Ask us</small></div>
+          <div class="item"><b>Pedicures</b><i></i><small>Ask us</small></div>
+          <p>Longer nails built on your own, and pedicures for tidy, polished toes.</p>
+        </div>
+        <div class="group">
+          <h3>Lashes</h3><span class="kick">Eyes</span>
+          <div class="item"><b>Eyelash extensions</b><i></i><small>Ask us</small></div>
+          <p>Single lashes applied one by one to your own for a fuller look.</p>
+        </div>
+        <div class="group">
+          <h3>Café</h3><span class="kick">In the house</span>
+          <div class="item"><b>From the café</b><i></i><small>Ask us</small></div>
+          <p>A small café inside the studio. Ask what's on today.</p>
+        </div>
+      </div>
+      <div class="board-foot">
+        <p>For prices and free slots, call <a href="tel:+639171044832">0917 104 4832</a>.</p>
+        <a class="btn btn--cherry" href="tel:+639171044832">Call to book</a>
+      </div>
+    </div>
+    <figure class="side-photo" data-reveal>
+      <img src="assets/cuticle-pusher.webp" width="800" height="1140" loading="lazy" alt="A steel cuticle pusher lying on a plain pink background">
+      <figcaption class="cap">Concept photo.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="sets" class="pad sets">
+  <div class="wrap">
+    <div class="sets-head" data-reveal>
+      <div><span class="eyebrow">Sets we love</span><h2 class="disp" style="margin-top:16px">Coquette <em>meets</em> Y2K.</h2></div>
+      <div>
+        <p>Trend-led nail art, from soft ribbons and hearts to shiny chrome. Our newest sets go up on Instagram and TikTok first.</p>
+        <div class="btns">
+          <a class="btn btn--cherry" href="https://www.instagram.com/nailhousebyila" target="_blank" rel="noopener">Instagram</a>
+          <a class="btn btn--line" href="https://www.tiktok.com/@nailhousebyila" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <div class="tiles" data-reveal>
+      <div class="tile"><div class="art" style="background:#f8dbe1"><svg viewBox="0 0 120 100" aria-hidden="true"><path d="M60 40 C46 14 10 8 8 30 C6 52 40 56 60 40Z M60 40 C74 14 110 8 112 30 C114 52 80 56 60 40Z" fill="#a3122a"/><path d="M54 46 L40 92 M66 46 L80 92" stroke="#a3122a" stroke-width="10" stroke-linecap="round"/><rect x="51" y="32" width="18" height="18" rx="7" fill="#7f0d20"/></svg></div><div><h3>Ribbons</h3></div><p>Soft coquette bows.</p></div>
+      <div class="tile"><div class="art" style="background:#d3e5f8"><svg viewBox="0 0 120 100" aria-hidden="true"><path d="M20 50 C40 10 80 10 100 50 C80 90 40 90 20 50Z" fill="none" stroke="#5d7395" stroke-width="3"/><path d="M60 8 C62 38 70 46 100 50 C70 54 62 62 60 92 C58 62 50 54 20 50 C50 46 58 38 60 8Z" fill="url(#chr2)" stroke="#6f7f98" stroke-width="1.5"/><defs><linearGradient id="chr2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".45" stop-color="#aebbd0"/><stop offset=".55" stop-color="#f1f5fb"/><stop offset="1" stop-color="#8391a8"/></linearGradient></defs></svg></div><div><h3>Chrome</h3></div><p>Mirror-shine Y2K.</p></div>
+      <div class="tile"><div class="art" style="background:#ebe2f8"><svg viewBox="0 0 120 100" aria-hidden="true"><path d="M60 90 C30 70 12 52 12 32 C12 18 23 8 36 8 C46 8 54 14 60 22 C66 14 74 8 84 8 C97 8 108 18 108 32 C108 52 90 70 60 90Z" fill="#a3122a"/><ellipse cx="38" cy="30" rx="8" ry="12" fill="#fff" opacity=".55" transform="rotate(-25 38 30)"/></svg></div><div><h3>Hearts</h3></div><p>Sweet, little details.</p></div>
+      <div class="tile"><div class="art" style="background:#f4ece4"><svg viewBox="0 0 120 100" aria-hidden="true"><path d="M58 30 C60 18 70 8 86 6" stroke="#4f6b3a" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M58 30 C54 20 46 14 36 12" stroke="#4f6b3a" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M84 6 C96 4 104 12 98 20 C90 22 84 16 84 6Z" fill="#6f9a4f"/><circle cx="36" cy="62" r="24" fill="#a3122a"/><circle cx="80" cy="56" r="24" fill="#c8203b"/><ellipse cx="28" cy="54" rx="5" ry="8" fill="#fff" opacity=".55"/><ellipse cx="72" cy="48" rx="5" ry="8" fill="#fff" opacity=".55"/></svg></div><div><h3>Cherries</h3></div><p>A pop of cherry red.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="cafe" class="pad">
+  <div class="wrap cafe-grid">
+    <figure class="cafe-photo" data-reveal>
+      <img src="assets/coral-cup.webp" width="1100" height="759" loading="lazy" alt="A coral cup of black coffee and its matching saucer, seen from above on a lilac background">
+      <span class="tag" aria-hidden="true">stay a while</span>
+      <figcaption class="cap" style="margin-top:20px">Concept photo.</figcaption>
+    </figure>
+    <div data-reveal>
+      <span class="eyebrow">The café</span>
+      <p class="trio">Nails. Lashes. Cafe.</p>
+      <h2 class="disp">Stay for <em>a cup</em>.</h2>
+      <p class="lead">There's a small café right inside the house, so your nail or lash visit can be a slow, comfy one. Ask what's on the menu when you call.</p>
+    </div>
+  </div>
+</section>
+
+<section id="visit" class="pad visit">
+  <div class="wrap visit-grid">
+    <div data-reveal>
+      <span class="eyebrow">Visit</span>
+      <h2 class="disp">Ground floor, Springville South.</h2>
+      <p class="addr">Blk 2 Lot 2B (Ground Floor), Springville South Phase 1, MB Villar Avenue, Molino III, Bacoor.</p>
+      <div class="btns">
+        <a class="btn btn--milk" href="https://www.google.com/maps/search/?api=1&amp;query=Nailhouse+Bacoor" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Open in Google Maps</a>
+        <a class="btn btn--ghost" href="tel:+639171044832">Call 0917 104 4832</a>
+      </div>
+    </div>
+    <div class="ticket" data-reveal>
+      <span class="k">Your visit</span>
+      <h3>Nailhouse by ILA</h3>
+      <p style="margin-top:8px;color:var(--ink-70)">Nails · lashes · café</p>
+      <div class="rule"></div>
+      <dl>
+        <dt>Where</dt><dd>Molino III, Bacoor, Cavite</dd>
+        <dt>Call</dt><dd><a href="tel:+639171044832">0917 104 4832</a></dd>
+        <dt>Email</dt><dd><a href="mailto:nailhousebacoor@gmail.com">nailhousebacoor@gmail.com</a></dd>
+        <dt>Tip</dt><dd>Call ahead for free slots.</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="pad contact">
+  <div class="wrap">
+    <span class="eyebrow" data-reveal>Say hi</span>
+    <h2 class="disp" data-reveal style="margin-top:18px">See you at <em>the house</em>.</h2>
+    <div class="rows" data-reveal>
+      <a href="tel:+639171044832"><i><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></i><span><small>Call</small><strong>0917 104 4832</strong></span></a>
+      <a href="mailto:nailhousebacoor@gmail.com"><i><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></i><span><small>Email</small><strong>nailhousebacoor@gmail.com</strong></span></a>
+      <a href="https://www.facebook.com/thenailhousebacoor" target="_blank" rel="noopener"><i><svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v7h4v-7h3l1-4h-4V8z"/></svg></i><span><small>Facebook</small><strong>thenailhousebacoor</strong></span></a>
+      <a href="https://www.instagram.com/nailhousebyila" target="_blank" rel="noopener"><i><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff"/></svg></i><span><small>Instagram</small><strong>@nailhousebyila</strong></span></a>
+      <a href="https://www.tiktok.com/@nailhousebyila" target="_blank" rel="noopener"><i><svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M16 3c.4 2.6 2 4.2 4.5 4.4v3.3c-1.6 0-3.1-.5-4.4-1.3v6.1A5.5 5.5 0 1 1 10.6 10v3.4a2.2 2.2 0 1 0 2.1 2.2V3z"/></svg></i><span><small>TikTok</small><strong>@nailhousebyila</strong></span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a class="wordmark" href="#top"><b>nailhouse</b><span>BY ILA · BACOOR</span></a>
+      <ul><li><a href="#menu">Menu</a></li><li><a href="#sets">Sets</a></li><li><a href="#cafe">Café</a></li><li><a href="#visit">Visit</a></li><li><a href="#contact">Contact</a></li></ul>
+    </div>
+    <div class="foot-note">
+      <p>Concept redesign by Jeig Torio · not the business's official website</p>
+      <p>Photos are stock concept placeholders, not the studio's own work. The bow, sticker and nail-art drawings are concept illustrations.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar"><a href="tel:+639171044832"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Call</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Nailhouse+Bacoor" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Directions</a></div>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els=document.querySelectorAll('[data-reveal]');
+  function all(){els.forEach(function(e){e.classList.add('is-in')});}
+  if(!('IntersectionObserver' in window)||reduce){all();return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('is-in');io.unobserve(e.target);}})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+  els.forEach(function(e){io.observe(e)});
+  setTimeout(all,2500);
+})();
+</script>
+</body>
+</html>
